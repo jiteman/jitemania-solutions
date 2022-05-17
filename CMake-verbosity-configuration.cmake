@@ -1,0 +1,11 @@
+#set( JSD_CMAKE_VERBOSE_OUTPUT is_on ) # [ is_on | is_off ]
+set( JSD_CMAKE_VERBOSE_OUTPUT is_off ) # [ is_on | is_off ]
+#set( JSD_CMAKE_DEPENDENCY_OUTPUT is_on ) # [ is_on | is_off ]
+set( JSD_CMAKE_DEPENDENCY_OUTPUT is_off ) # [ is_on | is_off ]
+#set( JSD_CMAKE_PROJECT_NAME_OUTPUT is_on ) # [ is_on | is_off ]
+set( JSD_CMAKE_PROJECT_NAME_OUTPUT is_off ) # [ is_on | is_off ]
+#set( JSD_CMAKE_BUILD_OUTPUT is_on ) # [ is_on | is_off ]
+set( JSD_CMAKE_BUILD_OUTPUT is_off ) # [ is_on | is_off ]
+#set( JSD_CMAKE_CMAKE_OUTPUT is_on ) # [ is_on | is_off ]
+set( JSD_CMAKE_CMAKE_OUTPUT is_off ) # [ is_on | is_off ]
+
