@@ -23,7 +23,7 @@ JSD_SHOW_PROJECT_GROUP_HEADER()
 
 add_subdirectory( 7-jsd-libraries/0-library-subproject-template )
 add_subdirectory( 9-jsd-applications/0-executable-template )
-
+add_subdirectory( 6-jsd-experimental/0-cpp-standard )
 # foreign components
 ##add_subdirectory( _jsd_foreign_components )
 ##add_subdirectory( _jsd_tpa_components )
