@@ -47,5 +47,5 @@ target_link_libraries( ${PROJECT_NAME} ${${PROJECT_NAME}_DEPENDENCY_LIBS_VAR} )
 
 
 ## Expose public includes to other subprojects through cache variable.
-include( ${JSD_CMAKE_SETTINGS_PATH}/set-expose-dependencies.cmake )
+include( ${JSD_CMAKE_PATH}/set-expose-dependencies.cmake )
 JSD_SHOW_PROJECT_FOOTER()
