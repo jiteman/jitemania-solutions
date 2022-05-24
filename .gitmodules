@@ -6,4 +6,7 @@
 	path = 1-jsd-configuration/1-jsd-platform
 	url = git@github.com:jiteman/jsd-platform-support.git
 	branch = main
-
+[submodule "2-jsd-foreign/0-tpg-autotesting/0-jsd-tpc-googletestmock"]
+	path = 2-jsd-foreign/0-tpg-autotesting/0-jsd-tpc-googletestmock
+	url = git@github.com:jiteman/jsd-tpc-googletestmock.git
+	branch = main
