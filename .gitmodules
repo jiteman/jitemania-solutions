@@ -1,6 +1,9 @@
 [submodule "1-jsd-configuration/0-jsd-cmake"]
 	path = 1-jsd-configuration/0-jsd-cmake
 	url = git@github.com:jiteman/jsd-cmake-modules.git
+	branch = main
 [submodule "1-jsd-configuration/1-jsd-platform"]
 	path = 1-jsd-configuration/1-jsd-platform
 	url = git@github.com:jiteman/jsd-platform-support.git
+	branch = main
+
