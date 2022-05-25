@@ -7,18 +7,33 @@ JSD_SHOW_PROJECT_HEADER()
 
 
 include( ${JSD_SSC_CMAKE_PATH}/ssc-base-library-set-compiler-settings.cmake )
-set( JSD_THIS_PROJECT_SOURCE_PATH ${JSD_SSC_SOURCE_PATH}/ssc_base )
+set( JSD_THIS_PROJECT_HEADER_PATH ${JSD_SSC_SOURCE_PATH}/source-repository/ssc_base )
+set( JSD_THIS_PROJECT_SOURCE_PATH ${JSD_SSC_SOURCE_PATH}/source-repository/ssc_base )
+set( JSD_THIS_PROJECT_ADHOCS_PATH ${JSD_SSC_SOURCE_PATH}/jsd_adhocs )
+
 
 ## include dependencies
 set( ${PROJECT_NAME}_DEPENDENCY_DIRS_VAR
 	${JSD_PLATFORM_SOURCES}
-	${JSD_THIS_PROJECT_SOURCE_PATH} )
+	${JSD_THIS_PROJECT_HEADER_PATH} )
 list( REMOVE_DUPLICATES ${PROJECT_NAME}_DEPENDENCY_DIRS_VAR )
 include_directories( ${${PROJECT_NAME}_DEPENDENCY_DIRS_VAR} )
 
+include_directories( ${JSD_THIS_PROJECT_ADHOCS_PATH}/common )
+
+if( UNIX )
+	include_directories( ${JSD_THIS_PROJECT_ADHOCS_PATH}/linux )
+elseif ( WIN32 )
+	include_directories( ${JSD_THIS_PROJECT_ADHOCS_PATH}/windows )
+endif()
+
 
 ## this project headers and sources enumeration section
-file( GLOB_RECURSE header_and_source_files ${JSD_THIS_PROJECT_SOURCE_PATH}/*.h* ${JSD_THIS_PROJECT_SOURCE_PATH}/*.c* )
+file( GLOB_RECURSE header_and_source_files
+#	${JSD_THIS_PROJECT_HEADER_PATH}/*.h*
+#	${JSD_THIS_PROJECT_HEADER_PATH}/*.c*
+	${JSD_THIS_PROJECT_SOURCE_PATH}/*.h*
+	${JSD_THIS_PROJECT_SOURCE_PATH}/*.c* )
 add_library( ${PROJECT_NAME} SHARED ${header_and_source_files} )
 
 
