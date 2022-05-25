@@ -14,3 +14,7 @@
 	path = 2-jsd-foreign/0-tpg-autotesting/0-tpa-gtm
 	url = git@github.com:jiteman/jsd-tpa-gtm.git
 	branch = main
+[submodule "2-jsd-foreign/0-tpg-autotesting/1-tpc-cppunit"]
+	path = 2-jsd-foreign/0-tpg-autotesting/1-tpc-cppunit
+	url = git@github.com:jiteman/jsd-tpc-cppunit.git
+	branch = main
