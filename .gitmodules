@@ -10,3 +10,7 @@
 	path = 2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock
 	url = git@github.com:jiteman/jsd-tpc-googletestmock.git
 	branch = main
+[submodule "2-jsd-foreign/0-tpg-autotesting/0-tpa-gtm"]
+	path = 2-jsd-foreign/0-tpg-autotesting/0-tpa-gtm
+	url = git@github.com:jiteman/jsd-tpa-gtm.git
+	branch = main
