@@ -1,7 +1,7 @@
 #pragma once
 
 
-#include "ssc_derived_class.h"
+#include "Ssc_derived_class.h"
 
 
 namespace jsd {

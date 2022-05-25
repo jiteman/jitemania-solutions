@@ -7,24 +7,24 @@ JSD_SHOW_PROJECT_HEADER()
 
 
 include( ${JSD_SSC_CMAKE_PATH}/ssc-executable-set-compiler-settings.cmake )
-set( JSD_THIS_SOURCE_PATH ${JSD_SSC_SOURCE_PATH}/ssc_executable )
+set( JSD_THIS_PROJECT_SOURCE_PATH ${JSD_SSC_SOURCE_PATH}/ssc_executable )
 
 
 ## include dependencies
 set( ${PROJECT_NAME}_DEPENDENCY_DIRS_VAR
 	${JSD_PLATFORM_SOURCES}
 	${ssc-derived-library_DEPENDENCY_DIRS}
-	${JSD_THIS_SOURCE_PATH} )
+	${JSD_THIS_PROJECT_SOURCE_PATH} )
 list( REMOVE_DUPLICATES ${PROJECT_NAME}_DEPENDENCY_DIRS_VAR )
 include_directories( ${${PROJECT_NAME}_DEPENDENCY_DIRS_VAR} )
 
 
 ## this project headers and sources enumeration section
 file( GLOB_RECURSE header_and_source_files
-	${JSD_THIS_SOURCE_PATH}/*.h*
-	${JSD_THIS_SOURCE_PATH}/*.c*
-	${JSD_THIS_SOURCE_PATH}_main/*.h*
-	${JSD_THIS_SOURCE_PATH}_main/*.c* )
+	${JSD_THIS_PROJECT_SOURCE_PATH}/*.h*
+	${JSD_THIS_PROJECT_SOURCE_PATH}/*.c*
+	${JSD_THIS_PROJECT_SOURCE_PATH}_main/*.h*
+	${JSD_THIS_PROJECT_SOURCE_PATH}_main/*.c* )
 add_executable( ${PROJECT_NAME} ${header_and_source_files} )
 
 
