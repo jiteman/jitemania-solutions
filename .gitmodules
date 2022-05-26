@@ -22,3 +22,6 @@
 	path = 2-jsd-foreign/0-tpg-autotesting/1-tpa-cppunit
 	url = git@github.com:jiteman/jsd-tpa-cppunit.git
 	branch = main
+[submodule "2-jsd-foreign/1-tpg-foundation/0-tpc-poco-cpp"]
+	path = 2-jsd-foreign/1-tpg-foundation/0-tpc-poco-cpp
+	url = git@github.com:jiteman/jsd-tpc-poco-cpp.git
