@@ -1,4 +1,4 @@
-cmake_minimum_required( VERSION 3.7.1 )
+cmake_minimum_required( VERSION 3.16.3 )
 
 project( ssc-derived-library C CXX )
 
@@ -30,7 +30,11 @@ endif()
 
 
 ## this project headers and sources enumeration section
-file( GLOB_RECURSE header_and_source_files ${JSD_THIS_PROJECT_SOURCE_PATH}/*.h* ${JSD_THIS_PROJECT_SOURCE_PATH}/*.c* )
+file( GLOB_RECURSE header_and_source_files
+#	${JSD_THIS_PROJECT_HEADER_PATH}/*.h*
+#	${JSD_THIS_PROJECT_HEADER_PATH}/*.c*
+	${JSD_THIS_PROJECT_SOURCE_PATH}/*.h*
+	${JSD_THIS_PROJECT_SOURCE_PATH}/*.c* )
 add_library( ${PROJECT_NAME} SHARED ${header_and_source_files} )
 
 
