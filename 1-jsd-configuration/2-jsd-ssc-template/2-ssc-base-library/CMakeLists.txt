@@ -7,8 +7,9 @@ JSD_SHOW_PROJECT_HEADER()
 
 
 include( ${JSD_SSC_CMAKE_PATH}/ssc-base-library-set-compiler-settings.cmake )
-set( JSD_THIS_PROJECT_HEADER_PATH ${JSD_SSC_SOURCE_PATH}/source-repository/ssc_base )
-set( JSD_THIS_PROJECT_SOURCE_PATH ${JSD_SSC_SOURCE_PATH}/source-repository/ssc_base )
+set( JSD_THIS_PROJECT_SOURCES_ROOT_PATH ${JSD_SSC_SOURCE_PATH}/source-repository )
+set( JSD_THIS_PROJECT_HEADER_PATH ${JSD_THIS_PROJECT_SOURCES_ROOT_PATH}/ssc_base )
+set( JSD_THIS_PROJECT_SOURCE_PATH ${JSD_THIS_PROJECT_SOURCES_ROOT_PATH}/ssc_base )
 set( JSD_THIS_PROJECT_ADHOCS_PATH ${JSD_SSC_SOURCE_PATH}/jsd_adhocs )
 
 
