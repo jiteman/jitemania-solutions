@@ -10,6 +10,7 @@ add_subdirectory( 0-tpg-autotesting/0-tpc-googletestmock )
 add_subdirectory( 0-tpg-autotesting/0-tpa-gtm )
 add_subdirectory( 0-tpg-autotesting/1-tpc-cppunit )
 add_subdirectory( 0-tpg-autotesting/1-tpa-cppunit )
+add_subdirectory( 1-tpg-foundation/0-tpc-poco-cpp )
 
 
 JSD_SHOW_PROJECT_GROUP_FOOTER()
